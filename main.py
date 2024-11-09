@@ -76,7 +76,9 @@ while True:
     if curr_time - camera_timestamp > 10:
         print("\nUpdating camera data:")
         for road in roads:
-            road.cam_update()
+            
+            # road.cam_update()
+            
             print(f"Road {road.get_name()} - Camera updated.")
         camera_timestamp = curr_time
 
